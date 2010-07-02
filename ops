@@ -1,0 +1,18 @@
+#!/bin/sh
+cat <<!
+1       () [] -> .                      left
+2       ! ~ ++ -- - (type) * & sizeof   right
+3       * / %                           left
+4       + -                             left
+5       >> <<                           left
+6       < <= > >=                       left
+7       == !=                           left
+8       &                               left
+9       ^                               left
+10      |                               left
+11      &&                              left
+12      ||                              left
+13      ?:                              right
+14      = op=                           right
+15      ,                               left
+!
